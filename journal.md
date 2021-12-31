@@ -41,6 +41,15 @@ Route 53:
 
   Darn, looks like both the cloudfront domain name and ARN aren't valid targets?  Not sure what the heck is going on here : (
 
+    Alright, stack overflow! https://stackoverflow.com/questions/30611917/cloudfront-distribution-not-showing-as-route53-alias-target
+
+    1. Only A records and AAAA are supported. Not CNAME records.
+    2. The Route53 "Alias Target" box matches against CloudFront distributions' "Alternate Domain Names" field. If you're creating a new record set for something.example.com, you should have already set the alternate domain name for one of your distributions to something.example.com.
+
+    Also, had to request an SSL certificate for use with HTTPS.  Stored in AWS certificate Manager.
+
+    FIXED!  Still not sure why Route 53 wasn't allowing me to point to the S3 static website though...
+
 CloudFront Requirement for HTTPS:  
   Knowing that cloudfront uses some neat tech of keeping website data cached at certain locations, this requirement seemed pretty intimidating initially.
 
