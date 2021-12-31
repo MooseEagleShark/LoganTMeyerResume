@@ -43,3 +43,19 @@ CloudFront Requirement for HTTPS:
   Knowing that cloudfront uses some neat tech of keeping website data cached at certain locations, this requirement seemed pretty intimidating initially.
 
   With the endpoint not being accepted by Route53 with a simple routing policy, I am going to skip ahead to see if Cloudfront access will be accepted by Route53?
+
+  Did not include an ALB as it seemed overkill but could be cool in the future?
+
+  Settings:
+    compression on
+    HTTPS only
+    Allowed HTTP methods:
+      Get,
+      head
+    restrict viewer access:
+      off
+
+    Function Associations: No idea what these archive
+
+    Price Class:
+    North America and Europe (getting very curious how much this whole configuration will cost lol)
