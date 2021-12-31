@@ -39,6 +39,8 @@ Route 53:
 
   Looks like Route53 isn't recognizing the s3 endpoint that has been created.  I might try logging out and back in again?
 
+  Darn, looks like both the cloudfront domain name and ARN aren't valid targets?  Not sure what the heck is going on here : (
+
 CloudFront Requirement for HTTPS:  
   Knowing that cloudfront uses some neat tech of keeping website data cached at certain locations, this requirement seemed pretty intimidating initially.
 
