@@ -13,4 +13,3 @@ Getting an IDE is still a pain on a mac. I was really hoping there would be a be
   S3 bucket:
 
   somehow logan-resume bucket was available!  Turned s3 static website on.  Left versioning, encryption, and public access off for now.
-  
