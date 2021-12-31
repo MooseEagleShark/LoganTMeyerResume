@@ -29,5 +29,13 @@ Route 53:
   Looks like Alias record will work, but Route 53 wants an s3 "end point".
 
   Creating an "access point" in S3 hoping that it will do the same thing as an "end point".
+    Update: It was not the same thing. deleted access point.
 
-CloudFront Requirement:  Knowing that cloudfront uses some neat tech of keeping website data cached at certain locations, this requirement seemed pretty intimidating initially.
+  In the S3 static website section they provide an endpoint.  Not sure if I can write the endpoint here publicly or not lol.
+
+  Looks like Route53 isn't recognizing the s3 endpoint that has been created.  I might try logging out and back in again?
+
+CloudFront Requirement for HTTPS:  
+  Knowing that cloudfront uses some neat tech of keeping website data cached at certain locations, this requirement seemed pretty intimidating initially.
+
+  With the endpoint not being accepted by Route53 with a simple routing policy, I am going to skip ahead to see if Cloudfront access will be accepted by Route53?
