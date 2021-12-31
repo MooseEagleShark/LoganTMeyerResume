@@ -16,6 +16,8 @@ S3 bucket:
 
   following the guide at: https://medium.com/avmconsulting-blog/host-your-static-website-in-aws-under-2-minutes-with-s3-a01237a83fda
 
+  Got distracted and messed around with intelligent tiering for a while.  I wonder if html files getting auto-tiered to archive will mess up this resume website one day (like specifically 90 days from now)?
+
 Route 53:
   Somehow HeyImLogan.com was available!  
 
@@ -32,6 +34,8 @@ Route 53:
     Update: It was not the same thing. deleted access point.
 
   In the S3 static website section they provide an endpoint.  Not sure if I can write the endpoint here publicly or not lol.
+
+  Getting a 403 Forbidden Error code when trying to access http://logan-resume.s3-website.us-east-2.amazonaws.com/
 
   Looks like Route53 isn't recognizing the s3 endpoint that has been created.  I might try logging out and back in again?
 
