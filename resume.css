@@ -2,6 +2,7 @@
 Notes:
 There are a couple things I remember from my old days of making websites for friends/family:
 -The size should be relative to the user's window
+-google fonts were freaking legit
 */
 
 /*
@@ -11,7 +12,7 @@ font-family: 'Titillium Web', sans-serif;
 */
 
 {
-  max-width: 700px;
+  max-width: 800px;
   margin: auto;
 }
 
@@ -29,6 +30,17 @@ div {
   background-color: #ffcccc;
   position: fixed;
   z-index: 1;
+}
+
+#h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    font-family: 'Titillium Web', sans-serif;
 }
 
 #title {
@@ -69,7 +81,7 @@ div {
 
 p,
 li {
-  font-family: "Cormorant Garamond";
+  font-family: 'Open Sans', sans-serif;
 }
 
 .head {

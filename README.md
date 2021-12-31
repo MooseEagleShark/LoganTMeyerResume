@@ -11,8 +11,11 @@ Here are the challenge requirements from his blogpost at: https://forrestbrazeal
 
 2.Your resume needs to be written in HTML. Not a Word doc, not a PDF. Here is an example of what I mean.
 
+-Needs improvement, but need to get CI/CD set up so I can start viewing the output quicker in a website.
 
 3.Your resume needs to be styled with CSS. No worries if you’re not a designer – neither am I. It doesn’t have to be fancy. But we need to see something other than raw HTML when we open the webpage.
+
+-Needs improvement, but need to get CI/CD set up so I can start viewing the output quicker in a website.
 
 4.Your HTML resume should be deployed online as an Amazon S3 static website. Services like Netlify and GitHub Pages are great and I would normally recommend them for personal static site deployments, but they make things a little too abstract for our purposes here. Use S3.
 
