@@ -20,6 +20,10 @@ S3 bucket:
 
   Hmm, Still getting S3 access Denied errors at heyitslogan.com.
 
+  Fixed, the access issues for s3 using: https://docs.aws.amazon.com/AmazonS3/latest/userguide/WebsiteAccessPermissionsReqd.html#bucket-policy-static-site
+
+  Still getting an access denied message on the cloudfront distribution though...
+
 Route 53:
   Somehow HeyImLogan.com was available!  
 
