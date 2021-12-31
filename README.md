@@ -1,5 +1,5 @@
 # LoganTMeyerResume
-Hey all, here is my attempt at Forrest Brazeal's #CloudResumeChallenge
+Hey all, here is my attempt at Forrest Brazeal's #CloudResumeChallenge:
 
 Here are the challenge requirements from his blogpost at: https://forrestbrazeal.com/2020/04/23/the-cloud-resume-challenge/
 
@@ -7,7 +7,10 @@ Here are the challenge requirements from his blogpost at: https://forrestbrazeal
 
 1.Your resume needs to have the AWS Cloud Practitioner certification on it. This is an introductory certification that orients you on the industry-leading AWS cloud – if you have a more advanced AWS cert, that’s fine but not expected. No cheating: include the validation code on the resume. You can sit this exam online for $100 USD. If that cost is a dealbreaker for you, let me know and I’ll see if I can help. Here are some exam prep resources.
 
+-COMPLETE
+
 2.Your resume needs to be written in HTML. Not a Word doc, not a PDF. Here is an example of what I mean.
+
 
 3.Your resume needs to be styled with CSS. No worries if you’re not a designer – neither am I. It doesn’t have to be fancy. But we need to see something other than raw HTML when we open the webpage.
 

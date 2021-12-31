@@ -1,3 +1,15 @@
+/*
+Notes:
+There are a couple things I remember from my old days of making websites for friends/family:
+-The size should be relative to the user's window
+*/
+
+/*
+Google font code:
+font-family: 'Open Sans', sans-serif;
+font-family: 'Titillium Web', sans-serif;
+*/
+
 {
   max-width: 700px;
   margin: auto;
