@@ -18,6 +18,8 @@ S3 bucket:
 
   Got distracted and messed around with intelligent tiering for a while.  I wonder if html files getting auto-tiered to archive will mess up this resume website one day (like specifically 90 days from now)?
 
+  Hmm, Still getting S3 access Denied errors at heyitslogan.com.
+
 Route 53:
   Somehow HeyImLogan.com was available!  
 
