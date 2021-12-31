@@ -24,6 +24,8 @@ S3 bucket:
 
   Still getting an access denied message on the cloudfront distribution though...
 
+  finally got it to work by pointing to http://heyitslogan.s3-website-us-east-1.amazonaws.com
+
 Route 53:
   Somehow HeyImLogan.com was available!  
 
