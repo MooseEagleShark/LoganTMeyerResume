@@ -80,4 +80,9 @@ CloudFront Requirement for HTTPS:
     North America and Europe (getting very curious how much this whole configuration will cost lol)
 
 javascript website counter:
-  first google link is here, for making a pure javascript counter.  Since we will want to integrate with dynamoDB, this is a good starting point, but will need to be modified.
+  first google link is here, for making a pure javascript counter.  Since we will want to integrate with dynamoDB, this is a good starting point, but will need to be modified.  --> https://contactmentor.com/build-website-visitor-counter-javascript/
+
+
+
+CI/CD using Github actions to push code to S3 bucket
+  Found a guide to do this using codepipeline here -> https://medium.com/avmconsulting-blog/automate-static-website-deployment-from-github-to-s3-using-aws-codepipeline-16acca25ebc1
