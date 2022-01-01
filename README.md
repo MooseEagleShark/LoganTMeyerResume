@@ -43,5 +43,7 @@ Here are the challenge requirements from his blogpost at: https://forrestbrazeal
 
 13.Create a second private GitHub repository for your website code. Create GitHub Actions such that when you push new website code, the S3 bucket automatically gets updated. (You may need to invalidate your CloudFront cache in the code as well.) Important note: DO NOT commit AWS credentials to source control! Bad hats will find them and use them against you!
 
+-COMPLETE... Wow, this was a lot easier that I thought using AWS Codepipeline's Github Integration.
+
 14.Finally, in the text of your resume, you should link a short blog post describing some things you learned while working on this project. Dev.to is a great place to publish if you don’t have your own blog.
 "
