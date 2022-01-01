@@ -3,6 +3,8 @@ Hey all, here is my attempt at Forrest Brazeal's #CloudResumeChallenge:
 
 Here are the challenge requirements from his blogpost at: https://forrestbrazeal.com/2020/04/23/the-cloud-resume-challenge/
 
+You are currently at the repo for the static website side and here is a link to my backend repo for this:https://github.com/MooseEagleShark/Resume-Backend_AWS-SAM
+
 "Now the important conditions:
 
 1.Your resume needs to have the AWS Cloud Practitioner certification on it. This is an introductory certification that orients you on the industry-leading AWS cloud – if you have a more advanced AWS cert, that’s fine but not expected. No cheating: include the validation code on the resume. You can sit this exam online for $100 USD. If that cost is a dealbreaker for you, let me know and I’ll see if I can help. Here are some exam prep resources.
@@ -31,7 +33,7 @@ Here are the challenge requirements from his blogpost at: https://forrestbrazeal
 
 7.Your resume webpage should include a visitor counter that displays how many people have accessed the site. You will need to write a bit of Javascript to make this happen. Here is a helpful tutorial to get you started in the right direction.
 
--COMPLETE
+-COMPLETE but need to make a ip address counter in order for it to count visitors not visits
 
 8.The visitor counter will need to retrieve and update its count in a database somewhere. I suggest you use Amazon’s DynamoDB for this. (Use on-demand pricing for the database and you’ll pay essentially nothing, unless you store or retrieve much more data than this project requires.) Here is a great free course on DynamoDB.
 
@@ -45,7 +47,7 @@ Here are the challenge requirements from his blogpost at: https://forrestbrazeal
 
 13.Create a second private GitHub repository for your website code. Create GitHub Actions such that when you push new website code, the S3 bucket automatically gets updated. (You may need to invalidate your CloudFront cache in the code as well.) Important note: DO NOT commit AWS credentials to source control! Bad hats will find them and use them against you!
 
--COMPLETE. Wow, this was a lot easier that I thought using AWS Codepipeline's Github Integration.
+-COMPLETE. Wow, this was a lot easier that I thought using AWS Codepipeline's Github Integration.  
 
 14.Finally, in the text of your resume, you should link a short blog post describing some things you learned while working on this project. Dev.to is a great place to publish if you don’t have your own blog.
 "
