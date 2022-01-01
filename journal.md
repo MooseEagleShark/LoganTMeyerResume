@@ -88,3 +88,5 @@ CI/CD using Github actions to push HTML/CSS/JS code to S3 bucket
   Found a guide to do this using codepipeline here -> https://medium.com/avmconsulting-blog/automate-static-website-deployment-from-github-to-s3-using-aws-codepipeline-16acca25ebc1
 
   Wow, since the article was written AWS has further streamlined the integration process where they simply took me to Github's website to confirm the integration and AWS pretty much took it from there with the exception of me specifing where I wanted the artifacts to go to.  Didn't even have to specify Github webhooks during the codepipeline setup.  I'm curious how this data is pushed / pulled behind the scenes?...
+
+  UPDATE: Wow, it just... worked?  That was a lot simpler process than integrations that I remember from 10 years ago using webhooks and REST apis and all sorts of things.
