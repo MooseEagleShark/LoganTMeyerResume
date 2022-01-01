@@ -16,9 +16,11 @@ font-family: 'Titillium Web', sans-serif;
   margin: auto;
 }
 
-/*body {
+body {
     min-width: 500px;
-}*/
+    background-color: #1F1F1F;
+    color: white;
+}
 
 div {
   border-radius: 5px;
@@ -127,7 +129,7 @@ a {
     width: 100%;
     margin-left: 10px;
   }
-  
+
   /* Visitor Counter CSS  */
   /* Center child elements */
   body,
