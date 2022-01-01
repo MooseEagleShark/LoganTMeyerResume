@@ -93,4 +93,8 @@ CI/CD using Github actions to push HTML/CSS/JS code to S3 bucket
 
   Update: Definitely running into the Cloudfront cacheing the css issue. I'll have to find a solution for that...
 
-  Looks like the options are to use versioning on the css file name or to use AWS CLI to invalidate the file.  The problem with the latter is that amazon charges if you run over a certain amount of invalidation requests.  I'll have to look into versioning the css...  Tried appending href="style.css?v=1" but the actual style.css file seems to still be getting cached? hmm...
+  Looks like the options are to use versioning on the css file name or to use AWS CLI to invalidate the file.  The problem with the latter is that amazon charges if you run over a certain amount of invalidation requests.  I'll have to look into versioning the css...  Tried appending href="style.css?v=1" but the actual style.css file seems to still be getting cached? hmm... maybe i can run an occasional invalidation of the css file using the API Gateway when I get to that point...
+
+AWS Serverless Application Model (SAM) to create:
+  API Gateway, Lambda function with Python, and DynamoDB for website visitor counter
+    Where to start?  I'll have to make another repository first for the backend stuff.
