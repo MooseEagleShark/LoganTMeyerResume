@@ -19,9 +19,15 @@ Here are the challenge requirements from his blogpost at: https://forrestbrazeal
 
 4.Your HTML resume should be deployed online as an Amazon S3 static website. Services like Netlify and GitHub Pages are great and I would normally recommend them for personal static site deployments, but they make things a little too abstract for our purposes here. Use S3.
 
+-COMPLETE
+
 5.The S3 website URL should use HTTPS for security. You will need to use Amazon CloudFront to help with this.
 
+-COMPLETE
+
 6.Point a custom DNS domain name to the CloudFront distribution, so your resume can be accessed at something like my-c00l-resume-website.com. You can use Amazon Route 53 or any other DNS provider for this. A domain name usually costs about ten bucks to register.
+
+-COMPLETE
 
 7.Your resume webpage should include a visitor counter that displays how many people have accessed the site. You will need to write a bit of Javascript to make this happen. Here is a helpful tutorial to get you started in the right direction.
 

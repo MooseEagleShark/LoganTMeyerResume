@@ -24,7 +24,7 @@ S3 bucket:
 
   Still getting an access denied message on the cloudfront distribution though...
 
-  finally got it to work by pointing to http://heyitslogan.s3-website-us-east-1.amazonaws.com
+  finally got it to work by pointing to http://heyitslogan.s3-website-us-east-1.amazonaws.com.  DOC-EXAMPLE-BUCKET.s3.amazonaws.com.  AWS documentation for the win!
 
 Route 53:
   Somehow HeyImLogan.com was available!  
@@ -74,7 +74,10 @@ CloudFront Requirement for HTTPS:
     restrict viewer access:
       off
 
-    Function Associations: No idea what these archive
+    Function Associations: No idea what these are
 
     Price Class:
     North America and Europe (getting very curious how much this whole configuration will cost lol)
+
+javascript website counter:
+  first google link is here, for making a pure javascript counter.  Since we will want to integrate with dynamoDB, this is a good starting point, but will need to be modified.
