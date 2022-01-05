@@ -1,167 +1,308 @@
-<!DOCTYPE html>
-<title>Logan's Cloud Resume</title>
- <head>
-   <!-- Include Javascript for visitor Counter -->
-   <script defer src="visitorcount.js"></script>
 
-   <!--CSS for Resume-->
-   <!--IMPORTANT! Increment the "v=1" below in order to make sure that the css file doesn't get cached... -->
-   <link rel="stylesheet" type="text/css" href="style.css?v=1" />
-   <!--CSS for Visitor Counter-->
-   <link rel="stylesheet" href="visitor_counter_style.css">
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 
-   <!--Gotta make this look good -->
-   <!--Google Font for Open Sans and Titillium Web-->
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
- </head>
+ <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+   <head>
+     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
- <style>
-   body {
-     background-image: url('/pix/samples/bg1.gif');
-   }
-   main {
-     margin-bottom: 200%;
-   }
-   .floating-menu {
-     font-family: sans-serif;
-     background: yellowgreen;
-     padding: 5px;;
-     width: 130px;
-     z-index: 100;
-     position: fixed;
-   }
-   .floating-menu a,
-   .floating-menu h3 {
-     font-size: 0.9em;
-     display: block;
-     margin: 0 0.5em;
-     color: white;
-   }
- </style>
- <main>
-   <p>Scroll down and watch the menu remain fixed in the same position, as though it was floating.</p>
-   <nav class="floating-menu">
-     <h3>Floating Menu</h3><a href="/css/">CSS</a>
-     <a href="/html/">HTML</a>
-     <a href="/coldfusion/">ColdFusion</a>
-     <a href="/database/">Database</a>
-   </nav>
- </main>
+     <title>Alan Turing - Father of Computer Science</title>
 
- <body>
-    <div id="header"></div>
-    <div class="left"></div>
-    <div class="stuff">
-      <br><br>
-      <h1>Logan's Cloud Resume</h1>
-      <h2> Logan T. Meyer</h2>
-      <hr />
-      <br>
-      <p class="head">Interests</p>
-      <ul>
-        <li>Drawing</li>
-        <li>Photography</li>
-        <li>Design</li>
-        <li>Programming</li>
-        <li>Computer Science</li>
-      </ul>
-      <p class="head">Skills</p>
-      <ul>
-        <li>Web Design with HTML & CSS</li>
-      </ul>
-      <p class="head">Education</p>
-      <ul>
-        <a href="http://www.wiltonhighschool.org/pages/Wilton_High_School">
-          <li>Wilton High School</li>
-        </a>
-        <!--Link-->
-        <a href="https://www.silvermineart.org/">
-          <li>Silvermine School of Arts</li>
-        </a>
-        <li>Codeacademy</li>
-      </ul>
-      <p class="head">Experience</p>
-      <ul>
-        <li>Student Technology Intern for Wilton School District</li>
-        <li>Babysitter</li>
-      </ul>
-      <p class="head">Extracurriculars</p>
-      <ul>
-        <li>Recycling Club</li>
-        <li>Gardening Club</li>
-        <li>Book Club</li>
-      </ul>
-    </div>
-    <div class="right"></div>
-    <div id="footer">
-      <h2 id="name">Emily</h2></div>
+     #bring in the Google Fonts
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
 
-    <!--Visitor Count Javascript Code-->
-    <div>Website visit count:</div>
-    <div class="visitor-counter"></div>
-    <button id="reset">Reset</button>
+     <style type="text/css">
+       * {
+         margin: 0;
+         padding: 0;
+       }
+       body {
+         font: 16px Helvetica, Sans-Serif;
+         line-height: 24px;
+       }
+       .clear {
+         clear: both;
+       }
+       #page-wrap {
+         width: 800px;
+         margin: 40px auto 60px;
+       }
+       #pic {
+         float: right;
+         margin: -30px 0 0 0;
+       }
+       h1 {
+         margin: 0 0 16px 0;
+         padding: 0 0 16px 0;
+         font-size: 42px;
+         font-weight: bold;
+         letter-spacing: -2px;
+         border-bottom: 1px solid #999;
+       }
+       h2 {
+         font-size: 20px;
+         margin: 0 0 6px 0;
+         position: relative;
+       }
+       h2 span {
+         position: absolute;
+         bottom: 0;
+         right: 0;
+         font-style: italic;
+         font-family: Georgia, Serif;
+         font-size: 16px;
+         color: #999;
+         font-weight: normal;
+       }
+       p {
+         margin: 0 0 16px 0;
+       }
+       a {
+         color: #999;
+         text-decoration: none;
+         border-bottom: 1px dotted #999;
+       }
+       a:hover {
+         border-bottom-style: solid;
+         color: black;
+       }
+       ul {
+         margin: 0 0 32px 17px;
+       }
+       #objective {
+         width: 500px;
+         float: left;
+       }
+       #objective p {
+         font-family: Georgia, Serif;
+         font-style: italic;
+         color: #666;
+       }
+       dt {
+         font-style: italic;
+         font-weight: bold;
+         font-size: 18px;
+         text-align: right;
+         padding: 0 26px 0 0;
+         width: 150px;
+         float: left;
+         height: 100px;
+         border-right: 1px solid #999;
+       }
+       dd {
+         width: 600px;
+         float: right;
+       }
+       dd.clear {
+         float: none;
+         margin: 0;
+         height: 15px;
+       }
+     </style>
+   </head>
 
-    <p>
-      <center>
-        Logan T. Meyer <br>
-      logan.t.meyer@gmail.com <br>
-      847 N Ogden · Denver, CO 80218 · (303)-669-8691 <br>
-        </center>
+   <body>
+     <div id="page-wrap">
+       <img
+         src="images/turing.jpg"
+         alt="Photo of Alan Turing"
+         id="pic"
+         style="max-width: 250px; border: 3px; border-radius: 5px;"
+       />
 
-      OBJECTIVE:   As a self-starter with wide ranging experience, my objective is to drive company growth, further my existing knowledge of technologies and cloud solutions, and develop strong colleague and client relationships.
+       <div id="contact-info" class="vcard">
+         <!-- Microformats! -->
 
-      CERTIFICATIONS:
-      		AWS Certified Cloud Practitioner (CLF-CO1)
-      Certified, September 2021
-      AWS Certified Solutions Architect Associate (SAA-CO2)
-      Certified, December 2021
-      AWS Certified SysOps Administrator (SOA-CO2)
-      		In progress
+         <h1 class="fn">Alan Turing</h1>
+
+         <p>
+           Cell: <span class="tel">(010) 110-0010</span><br />
+           Email:
+           <a class="email" href="mailto:alanturing@bletchleypark.com"
+             >alanturing@bletchleypark.com</a
+           >
+         </p>
+       </div>
+
+       <div id="objective">
+         <p>
+           Alan Mathison Turing (23 June 1912 – 7 June 1954) was an English
+           mathematician, computer scientist, logician, cryptanalyst,
+           philosopher, and theoretical biologist. Turing was highly influential
+           in the development of theoretical computer science, providing a
+           formalisation of the concepts of algorithm and computation with the
+           Turing machine, which can be considered a model of a general-purpose
+           computer.
+         </p>
+       </div>
+
+       <div class="clear"></div>
+
+       <dl>
+         <dd class="clear"></dd>
+
+         <dt>Education</dt>
+         <dd>
+           <h2>King's College - Cambridge, England</h2>
+           <p>
+             <strong>Major:</strong> Mathmatics<br />
+             Elected King's College Fellow for Dissertation on the Central Limit
+             Theorem
+           </p>
+
+           <h2>Princeton University - Princeton, New Jersey</h2>
+           <p>
+             <strong>Major:</strong> Mathmatics<br />
+             Obtained PhD in mathmatics and contributed significantly to concepts
+             of ordinal login and relative computing
+           </p>
+         </dd>
+
+         <dd class="clear"></dd>
+
+         <dt>Skills</dt>
+         <dd>
+           <h2>Cryptanalysis</h2>
+           <p>
+             Leading participant in the breaking of German ciphers at Bletchley
+             Park
+           </p>
+
+           <h2>Mathematics</h2>
+           <p>
+             Contributed significantly to the development of mathmatics with
+             respect to computer science applicationss
+           </p>
+         </dd>
+
+         <dd class="clear"></dd>
+
+         <dt>Experience</dt>
+         <dd>
+           <h2>Bletchley Park <span>Cryptanalyst</span></h2>
+           <ul>
+             <li>Broke the Enigma Code</li>
+             <li>Wrote two papers on the subject</li>
+           </ul>
+
+           <h2>Princeton University <span>PhD candidate</span></h2>
+           <ul>
+             <li>
+               Studied cryptology and also built three of four stages of an
+               electro-mechanical binary multiplier
+             </li>
+             <li>
+               Introduced the concept of ordinal logic and the notion of relative
+               computing
+             </li>
+           </ul>
+         </dd>
+
+         <dd class="clear"></dd>
+         <dt>Known For</dt>
+         <dd>
+           <ul>
+             <li>Cryptanalysis of the Enigma</li>
+             <li>Turing's proof</li>
+             <li>Turing machine</li>
+             <li>Turing test</li>
+             <li>Turing pattern</li>
+             <li>Turing reduction</li>
+           </ul>
+         </dd>
+
+         <dd class="clear"></dd>
+
+         <dt>Hobbies</dt>
+         <dd>
+           <ul>
+             <li>Computer Science</li>
+             <li>Mathematics</li>
+             <li>Pattern Formation</li>
+             <li>Cryptanalysis</li>
+           </ul>
+         </dd>
+
+         <dd class="clear"></dd>
+
+         <dt>References</dt>
+         <dd>
+           <ul>
+             <li>John Von Neumann</li>
+           </ul>
+         </dd>
+
+         <dd class="clear"></dd>
+       </dl>
+
+       <div class="clear"></div>
+     </div>
+   </body>
+   <footer>
+     <script src="turingresumecounter.js"></script>
+     <div>
+       <p style="text-align: center;">Visits: <span id="visits">0</span></p>
+     </div>
+   </footer>
+
+ <center>
+  Logan T. Meyer <br>
+logan.t.meyer@gmail.com <br>
+847 N Ogden · Denver, CO 80218 · (303)-669-8691 <br>
+  </center>
+
+OBJECTIVE:   As a self-starter with wide ranging experience, my objective is to drive company growth, further my existing knowledge of technologies and cloud solutions, and develop strong colleague and client relationships.
+
+CERTIFICATIONS:
+    AWS Certified Cloud Practitioner (CLF-CO1)
+Certified, September 2021
+AWS Certified Solutions Architect Associate (SAA-CO2)
+Certified, December 2021
+AWS Certified SysOps Administrator (SOA-CO2)
+    In progress
 
 
-      RELEVANT
-      PROJECTS:
-      StrongDenver.org  (Created 2018)
-      Denver data, development, and economics blog
-      The Book Seller (Created 2011)
-      Android app for selling college textbooks simply by scanning barcode and taking a few pictures of the front, back, ect.
+RELEVANT
+PROJECTS:
+StrongDenver.org  (Created 2018)
+Denver data, development, and economics blog
+The Book Seller (Created 2011)
+Android app for selling college textbooks simply by scanning barcode and taking a few pictures of the front, back, ect.
 
-      EXPERIENCE:
+EXPERIENCE:
 
-      Sunshine Street LLC, Denver, CO
-      Owner & Entrepreneur; Oct 2015- Present
-      Capitalized on a real estate development business opportunity specializing in accessory/carriage homes and short-term rentals in downtown Denver
-      Successfully developed and managed construction of four properties into cash flow positive long-term rentals while navigating the challenges of city ordinances
+Sunshine Street LLC, Denver, CO
+Owner & Entrepreneur; Oct 2015- Present
+Capitalized on a real estate development business opportunity specializing in accessory/carriage homes and short-term rentals in downtown Denver
+Successfully developed and managed construction of four properties into cash flow positive long-term rentals while navigating the challenges of city ordinances
 
-      		WPX Energy, Denver, CO
-      Data Integration Engineer.; Sept 2014- Sept 2015
-      Developed tools for data analysis, modeling, planning, and formation evaluation as well as maintaining data integrity using custom PHP, SQL, javascript, Excel, MS Access, and Google Sheets solutions
+    WPX Energy, Denver, CO
+Data Integration Engineer.; Sept 2014- Sept 2015
+Developed tools for data analysis, modeling, planning, and formation evaluation as well as maintaining data integrity using custom PHP, SQL, javascript, Excel, MS Access, and Google Sheets solutions
 
-      		Sperry Drilling, Oklahoma City, OK
-      Sr. Field Engineer; May 2012- Sept 2014
-      Led a team of onsite engineers operating high end directional/logging drilling technology and performing real time data analysis while gaining a broad knowledge of drilling practices, techniques, and operations
-      Utilized networking and IT experience, monitored and gave real-time support to field operations, and enhanced office and field communication
+    Sperry Drilling, Oklahoma City, OK
+Sr. Field Engineer; May 2012- Sept 2014
+Led a team of onsite engineers operating high end directional/logging drilling technology and performing real time data analysis while gaining a broad knowledge of drilling practices, techniques, and operations
+Utilized networking and IT experience, monitored and gave real-time support to field operations, and enhanced office and field communication
 
-      FundraisingShop.com, CU Boulder
-      Chief Technology Officer; Fall 2009- Spring 2012
-      Developed overall strategy for data structures, website creation, mobile app development, and database administration.
-      https://web.archive.org/web/20160314204732/http://fundraisingshop.com/
-
-
-      GeeksofWebsiteDesign.com, CU Boulder
-      Owner & Entrepreneur; Fall 2008- Spring 2009
-      Built & managed websites for friends and small businesses including chiccouture.biz, perfectpets.com, meyerelectric.us, therisingphoenixperfumery.com
-      Gained extensive knowledge regarding data structures, database construction, and overall IT
-      https://web.archive.org/web/20130603163052/http://geeksofwebsitedesign.com/
+FundraisingShop.com, CU Boulder
+Chief Technology Officer; Fall 2009- Spring 2012
+Developed overall strategy for data structures, website creation, mobile app development, and database administration.
+https://web.archive.org/web/20160314204732/http://fundraisingshop.com/
 
 
-      EDUCATION:
-      University of Colorado at Boulder, Boulder, CO
-      B.S. Mechanical Engineering, August 2011
-      University of Oxford, Trinity College, Oxford, UK
-      Associate Student, Michaelmas/Fall Term 2010
-    </p>
-  </body>
-</html>
+GeeksofWebsiteDesign.com, CU Boulder
+Owner & Entrepreneur; Fall 2008- Spring 2009
+Built & managed websites for friends and small businesses including chiccouture.biz, perfectpets.com, meyerelectric.us, therisingphoenixperfumery.com
+Gained extensive knowledge regarding data structures, database construction, and overall IT
+https://web.archive.org/web/20130603163052/http://geeksofwebsitedesign.com/
+
+
+EDUCATION:
+University of Colorado at Boulder, Boulder, CO
+B.S. Mechanical Engineering, August 2011
+University of Oxford, Trinity College, Oxford, UK
+Associate Student, Michaelmas/Fall Term 2010
+
+ </html>
