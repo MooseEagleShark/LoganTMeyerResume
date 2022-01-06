@@ -3,7 +3,7 @@ Hey all, here is my attempt at Forrest Brazeal's #CloudResumeChallenge:
 
 Here are the challenge requirements from his blogpost at: https://forrestbrazeal.com/2020/04/23/the-cloud-resume-challenge/
 
-You are currently at the repo for the static website side and here is a link to my backend repo for this:https://github.com/MooseEagleShark/Resume-Backend_AWS-SAM
+You are currently at the repo for the static website side and here is a link to my backend repo for the project:https://github.com/MooseEagleShark/Resume-Backend_AWS-SAM
 
 "Now the important conditions:
 
