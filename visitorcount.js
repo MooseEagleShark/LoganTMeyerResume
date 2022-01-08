@@ -17,7 +17,8 @@ $.get('https://www.cloudflare.com/cdn-cgi/trace', function(data) {
 });
 
 //get datetime
-document.getElementById('datetime').innerHTML = Date()
+var datetime = Date();
+document.getElementById('datetime').innerHTML = datetime;
 //var datetime = Date().toLocaleString(    [], {month: '2-digit', year: '4-digit', hour: '2-digit', minute:'2-digit', second:'2-digit'}  );
 //document.getElementById("datetime").innerHTML = datetime;
 
@@ -40,7 +41,7 @@ xhttp.open(
   true
 );
 // Sends the request to the server
-xhttp.send(); // GET
+//xhttp.send(); // GET
 
 // xhttp.send(string)  // POST
 //However, always use POST requests when:
