@@ -11,13 +11,13 @@ $.get('https://www.cloudflare.com/cdn-cgi/trace', function(data) {
   console.log(data);
   //select ip portion of returned data
   var ip = (data).ip;
-  var city = (data).loc;
+  var loc = (data).loc;
   //set ip div element to ip
   document.getElementById("ip").innerHTML = ip + " " + loc;
 });
 
 //get datetime
-var datetime = date.toISOString();
+var datetime = Date().toISOString();
 document.getElementById('datetime').innerHTML = datetime;
 //var datetime = Date().toLocaleString(    [], {month: '2-digit', year: '4-digit', hour: '2-digit', minute:'2-digit', second:'2-digit'}  );
 //document.getElementById("datetime").innerHTML = datetime;
