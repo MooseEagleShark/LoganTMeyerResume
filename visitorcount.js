@@ -11,8 +11,9 @@ $.get('https://www.cloudflare.com/cdn-cgi/trace', function(data) {
   console.log(data);
   //select ip portion of returned data
   var ip = (data).ip;
+  var city = (data).city;
   //set ip div element to ip
-  document.getElementById("ip").innerHTML = ip;
+  document.getElementById("ip").innerHTML = ip + " " + city;
 });
 
 //get datetime
