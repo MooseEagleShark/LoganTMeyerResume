@@ -17,8 +17,9 @@ $.get('https://www.cloudflare.com/cdn-cgi/trace', function(data) {
 });
 
 //get datetime
-var datetime = Date().toLocaleString(    [], {month: '2-digit', year: '4-digit', hour: '2-digit', minute:'2-digit', second:'2-digit'}  );
-document.getElementById("datetime").innerHTML = datetime;
+document.getElementById('datetime').innerHTML = Date()
+//var datetime = Date().toLocaleString(    [], {month: '2-digit', year: '4-digit', hour: '2-digit', minute:'2-digit', second:'2-digit'}  );
+//document.getElementById("datetime").innerHTML = datetime;
 
 // Get the visitors element on the page
 // Use AJAX to send a http request to the server
