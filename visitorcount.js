@@ -10,7 +10,7 @@ $.get('https://www.cloudflare.com/cdn-cgi/trace', function(data) {
   }, {});
   console.log(data);
   //select ip portion of returned data
-  var ip = console.log(data);
+  var ip = console.log(data).ip();
   //set ip div element to ip
   document.getElementById("ip").innerHTML = ip;
 });
