@@ -41,7 +41,7 @@ xhttp.open(
   true
 );
 // Sends the request to the server
-//xhttp.send(); // GET
+xhttp.send(); // GET
 
 // xhttp.send(string)  // POST
 //However, always use POST requests when:
