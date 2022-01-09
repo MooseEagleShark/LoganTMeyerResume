@@ -13,7 +13,7 @@ $.get('https://www.cloudflare.com/cdn-cgi/trace', function(data) {
   var ip = (data).ip;
   var loc = (data).loc;
   //set ip div element to ip
-  document.getElementById('ip').innerHTML = ip + " " + loc;
+  document.getElementById('ip').innerHTML = ip;
 });
 
 //get datetime
