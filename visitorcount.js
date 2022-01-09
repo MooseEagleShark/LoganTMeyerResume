@@ -10,12 +10,12 @@ $.get('https://www.cloudflare.com/cdn-cgi/trace', function(data) {
   }, {});
   console.log(data);
   //select ip portion of returned data
-  var ip = (data).ip;
-  ip = JSON.stringify(ip)
+  var ipnum = (data).ip;
+  ipnum = ipnum.replace(/\./g,'-')
   var loc = (data).loc;
   loc = JSON.stringify(loc)
   //set ip div element to ip
-  document.getElementById('ip').innerHTML = ip + " " + loc;
+  document.getElementById('ip').innerHTML = ipnum + " " + loc;
 });
 
 //get datetime
@@ -41,7 +41,7 @@ xhttp.onreadystatechange = function () {
 // open(method, url, async)
 xhttp.open(
   "GET",
-  "https://y87ypxfua7.execute-api.us-east-1.amazonaws.com/Prod/count_visitors?ip=" + ip + "&datetime=" + datetime,
+  "https://y87ypxfua7.execute-api.us-east-1.amazonaws.com/Prod/count_visitors?ip=" + ipnum + "&datetime=" + datetime,
   //"https://bwc2pl2iz5.execute-api.us-east-1.amazonaws.com/Prod/counter",
   true
 );
