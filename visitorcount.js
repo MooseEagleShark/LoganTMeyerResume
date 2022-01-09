@@ -22,6 +22,7 @@ $.get('https://www.cloudflare.com/cdn-cgi/trace', function(data) {
 const date = new Date()
 var datetime = date.toISOString();
 datetime = datetime.replace(/\./g,'-')
+datetime = datetime.replace(/:/g,'-')
 document.getElementById('datetime').innerHTML = datetime;
 //var datetime = Date().toLocaleString(    [], {month: '2-digit', year: '4-digit', hour: '2-digit', minute:'2-digit', second:'2-digit'}  );
 //document.getElementById("datetime").innerHTML = datetime;
