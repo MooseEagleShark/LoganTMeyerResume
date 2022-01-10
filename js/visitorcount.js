@@ -39,7 +39,7 @@ $.get('https://www.cloudflare.com/cdn-cgi/trace', function(data) {
   // open(method, url, async)
   xhttp.open(
     "GET",
-    "https://v3o8rllzw1.execute-api.us-east-1.amazonaws.com/Prod/count_visitors?ip=" + ip + "&datetime=" + datetime,
+    "https://rff8fll6zc.execute-api.us-east-1.amazonaws.com/Prod/counter?ip=" + ip + "&datetime=" + datetime,
     //"https://bwc2pl2iz5.execute-api.us-east-1.amazonaws.com/Prod/counter",
     true
   );
