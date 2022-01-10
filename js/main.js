@@ -32,7 +32,7 @@ async function get_visitors() {
   // call post api request function
   await post_visitor();
   try {
-    let response = await fetch('https://rff8fll6zc.execute-api.us-east-1.amazonaws.com/Prod/transactions?transactionId=5&type=PURCHASE&amount=500', {
+    let response = await fetch('https://rff8fll6zc.execute-api.us-east-1.amazonaws.com/Prod/transactions?transactionid=5&type=PURCHASE&amount=500', {
       method: 'GET',
       headers: {
         //'x-api-key': 'JslbDfdt1F8fl7wE4CRIj1Oqidmtmzqw4lZ539Sj',
@@ -62,7 +62,7 @@ xhttp.onreadystatechange = function () {
 };
 xhttp.open(
   "GET",
-  "https://rff8fll6zc.execute-api.us-east-1.amazonaws.com/Prod/transactions?transactionId=5&type=PURCHASE&amount=500",
+  "https://rff8fll6zc.execute-api.us-east-1.amazonaws.com/Prod/transactions?transactionid=5&type=PURCHASE&amount=500",
   true
 );
 xhttp.send();
