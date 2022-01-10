@@ -49,6 +49,23 @@ $.get('https://www.cloudflare.com/cdn-cgi/trace', function(data) {
   xhttp.send(); // GET
 });
 
+var xhttp2 = new XMLHttpRequest();
+xhttp2.onreadystatechange = function () {
+  if (this.readyState == 4 && this.status == 200) {
+    // Typical action to be performed when the document is ready:
+    document.getElementById("transactions").innerHTML = xhttp.responseText;
+  }
+};
+
+// open(method, url, async)
+xhttp2.open(
+  "GET",
+  "https://rff8fll6zc.execute-api.us-east-1.amazonaws.com/Prod/transactions?transactionId=5&type=PURCHASE&amount=500",
+  //"https://bwc2pl2iz5.execute-api.us-east-1.amazonaws.com/Prod/counter",
+  true
+
+https://rff8fll6zc.execute-api.us-east-1.amazonaws.com/Prod/transactions?transactionId=5&type=PURCHASE&amount=500
+
 // xhttp.send(string)  // POST
 //However, always use POST requests when:
 
