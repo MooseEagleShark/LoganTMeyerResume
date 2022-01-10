@@ -10,15 +10,14 @@ $.get('https://www.cloudflare.com/cdn-cgi/trace', function(data) {
   }, {});
   console.log(data);
   //select ip portion of returned data
-  var ip = (data).ip;
+  var ip= (data).ip;
+  var ipnum = JSON.stringify(ip)
+  ipnum = ipnum.replace(/\./g,'-')
   var loc = (data).loc;
+  loc = JSON.stringify(loc)
   //set ip div element to ip
-  document.getElementById('ip').innerHTML = ip;
-  var ipnum = ip.replace(/\./g,'-')
+  document.getElementById('ip').innerHTML = ipnum + " " + loc;
 });
-
-//retrieve ip from html
-var ip = document.getElementById('ip').innerHTML
 
 //get datetime
 const date = new Date()
