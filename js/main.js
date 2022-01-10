@@ -8,49 +8,6 @@ document.addEventListener('DOMContentLoaded', function () {
   zooming.listen('.img-zoomable')
 })
 
-
-// POST API REQUEST
-async function post_visitor() {
-  try {
-    let response = await fetch('https://rff8fll6zc.execute-api.us-east-1.amazonaws.com/Prod/transactions?transactionId=5&type=PURCHASE&amount=500', {
-      method: 'POST',
-      headers: {
-        //'x-api-key': 'JslbDfdt1F8fl7wE4CRIj1Oqidmtmzqw4lZ539Sj',
-        'Content-Type': 'application/json',
-      }
-    });
-    let data = await response.json()
-    //console.log(data);
-    return data;
-  } catch(err) {
-    console.error(err);
-  }
-}
-
-// GET API REQUEST
-async function get_visitors() {
-  // call post api request function
-  await post_visitor();
-  try {
-    let response = await fetch('https://rff8fll6zc.execute-api.us-east-1.amazonaws.com/Prod/transactions?transactionid=5&type=PURCHASE&amount=500', {
-      method: 'GET',
-      headers: {
-        //'x-api-key': 'JslbDfdt1F8fl7wE4CRIj1Oqidmtmzqw4lZ539Sj',
-        'Content-Type': 'application/json',
-
-      }
-    });
-    let data = await response.json()
-    document.getElementById("transactions").innerHTML = data['body'] + " visitors";
-    //console.log(data);
-    return data;
-  } catch(err) {
-    console.error(err);
-  }
-}
-
-get_visitors();
-
 //Get the visitors element on the page
 
 var xhttp = new XMLHttpRequest();
