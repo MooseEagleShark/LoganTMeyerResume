@@ -15,7 +15,7 @@ async function post_visitor() {
     let response = await fetch('https://rff8fll6zc.execute-api.us-east-1.amazonaws.com/Prod/transactions?transactionId=5&type=PURCHASE&amount=500', {
       method: 'POST',
       headers: {
-        'Content-type', 'application/json',
+        'Content-Type', 'application/json',
       }
     });
     let data = await response.json()
@@ -34,7 +34,7 @@ async function get_visitors() {
     let response = await fetch('https://rff8fll6zc.execute-api.us-east-1.amazonaws.com/Prod/transactions?transactionId=5&type=PURCHASE&amount=500', {
       method: 'GET',
       headers: {
-        'Content-type', 'application/json'
+        'Content-Type', 'application/json'
       }
     });
     let data = await response.json()
