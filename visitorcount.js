@@ -11,10 +11,10 @@ $.get('https://www.cloudflare.com/cdn-cgi/trace', function(data) {
   console.log(data);
   //select ip portion of returned data
   var ip = (data).ip;
-  ip = ip.replace(/\./g,'-')
   var loc = (data).loc;
   //set ip div element to ip
   document.getElementById('ip').innerHTML = ip;
+  var ipnum = ip.replace(/\./g,'-')
 });
 
 //retrieve ip from html
@@ -43,7 +43,7 @@ xhttp.onreadystatechange = function () {
 // open(method, url, async)
 xhttp.open(
   "GET",
-  "https://y87ypxfua7.execute-api.us-east-1.amazonaws.com/Prod/count_visitors?ip=" + ip + "&datetime=" + datetime,
+  "https://y87ypxfua7.execute-api.us-east-1.amazonaws.com/Prod/count_visitors?ip=" + ipnum + "&datetime=" + datetime,
   //"https://bwc2pl2iz5.execute-api.us-east-1.amazonaws.com/Prod/counter",
   true
 );
