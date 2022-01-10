@@ -12,10 +12,9 @@ $.get('https://www.cloudflare.com/cdn-cgi/trace', function(data) {
   //select ip portion of returned data
   var ip= (data).ip;
   ip = ip.replace(/\./g,'-')
-  var ipnum = ip.replace(/\./g,'-')
   var loc = (data).loc;
   //set ip div element to ip
-  document.getElementById('ip').innerHTML = ipnum + " " + loc;
+  document.getElementById('ipdiv').innerHTML = ip + " " + loc;
 });
 
 //get datetime
