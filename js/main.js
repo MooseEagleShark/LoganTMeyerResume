@@ -15,7 +15,7 @@ async function post_visitor() {
     let response = await fetch('https://rff8fll6zc.execute-api.us-east-1.amazonaws.com/Prod/transactions?transactionId=5&type=PURCHASE&amount=500', {
       method: 'POST',
       headers: {
-        'Content-Type', 'application/json',
+        'Content-Type', 'application/json'
       }
     });
     let data = await response.json()
