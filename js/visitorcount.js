@@ -44,7 +44,7 @@ $.get('https://www.cloudflare.com/cdn-cgi/trace', function(data) {
     true
   );
   //set request header
-  xhttp.setRequestHeader('Content-type', 'application/json');
+  //xhttp.setRequestHeader('Content-type', 'application/json');
   // Sends the request to the server
   xhttp.send(); // GET
 });
