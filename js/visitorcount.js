@@ -44,7 +44,7 @@ $.get('https://www.cloudflare.com/cdn-cgi/trace', function(data) {
     true
   );
   //set request header
-  //xhttp.setRequestHeader('Content-type', 'application/json');
+  xhttp.setRequestHeader('Content-type', 'application/json');
   // Sends the request to the server
   xhttp.send(); // GET
 });
@@ -64,6 +64,7 @@ xhttp2.open(
   //"https://bwc2pl2iz5.execute-api.us-east-1.amazonaws.com/Prod/counter",
   true
 );
+xhttp2.setRequestHeader('Content-type', 'application/json');
 
 xhttp2.send(); // GET
 
