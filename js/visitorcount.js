@@ -63,6 +63,7 @@ xhttp2.open(
   "https://rff8fll6zc.execute-api.us-east-1.amazonaws.com/Prod/transactions?transactionId=5&type=PURCHASE&amount=500",
   //"https://bwc2pl2iz5.execute-api.us-east-1.amazonaws.com/Prod/counter",
   true
+);
 
 // xhttp.send(string)  // POST
 //However, always use POST requests when:
