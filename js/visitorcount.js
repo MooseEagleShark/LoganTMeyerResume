@@ -65,6 +65,8 @@ xhttp2.open(
   true
 );
 
+xhttp2.send(); // GET
+
 // xhttp.send(string)  // POST
 //However, always use POST requests when:
 
