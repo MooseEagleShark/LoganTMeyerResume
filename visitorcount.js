@@ -46,15 +46,25 @@ $.get('https://www.cloudflare.com/cdn-cgi/trace', function(data) {
   // Sends the request to the server
   xhttp.send(); // GET
 });
+
+var xhttp2 = new XMLHttpRequest();
+xhttp.onreadystatechange = function () {
+  if (this.readyState == 4 && this.status == 200) {
+    // Typical action to be performed when the document is ready:
+    document.getElementById("visits").innerHTML = xhttp.responseText;
+  }
+};
+
 // open(method, url, async)
-xhttp.open(
+xhttp2.open(
   "GET",
   "https://v3o8rllzw1.execute-api.us-east-1.amazonaws.com/Prod/count_visitors?ip=" + ip + "&datetime=" + datetime,
   //"https://bwc2pl2iz5.execute-api.us-east-1.amazonaws.com/Prod/counter",
   true
 );
 // Sends the request to the server
-xhttp.send(); // GET
+xhttp2.send(); // GET
+
 
 
 // xhttp.send(string)  // POST
