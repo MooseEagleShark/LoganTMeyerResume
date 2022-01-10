@@ -15,37 +15,38 @@ $.get('https://www.cloudflare.com/cdn-cgi/trace', function(data) {
   var loc = (data).loc;
   //set ip div element to ip
   document.getElementById('ipdiv').innerHTML = ip + " " + loc;
+
+  //get datetime
+  const date = new Date()
+  var datetime = date.toISOString();
+  datetime = datetime.replace(/\./g,'-')
+  datetime = datetime.replace(/:/g,'-')
+  document.getElementById('datetime').innerHTML = datetime;
+  //var datetime = Date().toLocaleString(    [], {month: '2-digit', year: '4-digit', hour: '2-digit', minute:'2-digit', second:'2-digit'}  );
+  //document.getElementById("datetime").innerHTML = datetime;
+
+  // Get the visitors element on the page
+  // Use AJAX to send a http request to the server
+  // To send a request to a server, we use the open() and send() methods of the XMLHttpRequest object:
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function () {
+    if (this.readyState == 4 && this.status == 200) {
+      // Typical action to be performed when the document is ready:
+      document.getElementById("visits").innerHTML = xhttp.responseText;
+    }
+  };
+
+  // open(method, url, async)
+  xhttp.open(
+    "GET",
+    "https://y87ypxfua7.execute-api.us-east-1.amazonaws.com/Prod/count_visitors?ip=" + ip + "&datetime=" + datetime,
+    //"https://bwc2pl2iz5.execute-api.us-east-1.amazonaws.com/Prod/counter",
+    true
+  );
+  // Sends the request to the server
+  xhttp.send(); // GET
 });
 
-//get datetime
-const date = new Date()
-var datetime = date.toISOString();
-datetime = datetime.replace(/\./g,'-')
-datetime = datetime.replace(/:/g,'-')
-document.getElementById('datetime').innerHTML = datetime;
-//var datetime = Date().toLocaleString(    [], {month: '2-digit', year: '4-digit', hour: '2-digit', minute:'2-digit', second:'2-digit'}  );
-//document.getElementById("datetime").innerHTML = datetime;
-
-// Get the visitors element on the page
-// Use AJAX to send a http request to the server
-// To send a request to a server, we use the open() and send() methods of the XMLHttpRequest object:
-var xhttp = new XMLHttpRequest();
-xhttp.onreadystatechange = function () {
-  if (this.readyState == 4 && this.status == 200) {
-    // Typical action to be performed when the document is ready:
-    document.getElementById("visits").innerHTML = xhttp.responseText;
-  }
-};
-
-// open(method, url, async)
-xhttp.open(
-  "GET",
-  "https://y87ypxfua7.execute-api.us-east-1.amazonaws.com/Prod/count_visitors?ip=" + ip + "&datetime=" + datetime,
-  //"https://bwc2pl2iz5.execute-api.us-east-1.amazonaws.com/Prod/counter",
-  true
-);
-// Sends the request to the server
-xhttp.send(); // GET
 
 // xhttp.send(string)  // POST
 //However, always use POST requests when:
