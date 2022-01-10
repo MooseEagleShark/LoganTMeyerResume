@@ -54,8 +54,8 @@ $.get('https://www.cloudflare.com/cdn-cgi/trace', function(data) {
   // Get the visitors element on the page
   // Use AJAX to send a http request to the server
   // To send a request to a server, we use the open() and send() methods of the XMLHttpRequest object:
-  var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function () {
+  var xhttp2 = new XMLHttpRequest();
+  xhttp2.onreadystatechange = function () {
     if (this.readyState == 4 && this.status == 200) {
       // Typical action to be performed when the document is ready:
       document.getElementById("uniquevisits").innerHTML = xhttp.responseText;
@@ -63,14 +63,14 @@ $.get('https://www.cloudflare.com/cdn-cgi/trace', function(data) {
   };
 
   // open(method, url, async)
-  xhttp.open(
+  xhttp2.open(
     "GET",
     "https://rff8fll6zc.execute-api.us-east-1.amazonaws.com/Prod/counter?ip=" + ip + "&datetime=" + datetime,
     //"https://bwc2pl2iz5.execute-api.us-east-1.amazonaws.com/Prod/counter",
     true
   );
   //set request header
-  xhttp.setRequestHeader('Content-Type', 'application/json');
+  xhttp2.setRequestHeader('Content-Type', 'application/json');
   // Sends the request to the server
-  xhttp.send(); // GET
+  xhttp2.send(); // GET
 });
