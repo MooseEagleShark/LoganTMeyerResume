@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
 // POST API REQUEST
 async function post_visitor() {
   try {
-    let response = await fetch('https://gk5nxsljel.execute-api.us-east-1.amazonaws.com/Prod/count', {
+    let response = await fetch('https://rff8fll6zc.execute-api.us-east-1.amazonaws.com/Prod/transactions?transactionId=5&type=PURCHASE&amount=500', {
       method: 'POST',
       headers: {
         'x-api-key': 'JslbDfdt1F8fl7wE4CRIj1Oqidmtmzqw4lZ539Sj'
@@ -31,14 +31,14 @@ async function get_visitors() {
   // call post api request function
   await post_visitor();
   try {
-    let response = await fetch('https://gk5nxsljel.execute-api.us-east-1.amazonaws.com/Prod/count', {
+    let response = await fetch('https://rff8fll6zc.execute-api.us-east-1.amazonaws.com/Prod/transactions?transactionId=5&type=PURCHASE&amount=500', {
       method: 'GET',
       headers: {
         'x-api-key': 'JslbDfdt1F8fl7wE4CRIj1Oqidmtmzqw4lZ539Sj',
       }
     });
     let data = await response.json()
-    document.getElementById("visitors").innerHTML = data['body'] + " visitors";
+    document.getElementById("transactions").innerHTML = data['body'] + " visitors";
     //console.log(data);
     return data;
   } catch(err) {
@@ -54,12 +54,12 @@ var xhttp = new XMLHttpRequest();
 xhttp.onreadystatechange = function () {
   if (this.readyState == 4 && this.status == 200) {
     // Typical action to be performed when the document is ready:
-    document.getElementById("seanvisits").innerHTML = xhttp.responseText;
+    document.getElementById("transactions2").innerHTML = xhttp.responseText;
   }
 };
 xhttp.open(
   "GET",
-  "https://bwc2pl2iz5.execute-api.us-east-1.amazonaws.com/Prod/counter",
+  "https://rff8fll6zc.execute-api.us-east-1.amazonaws.com/Prod/transactions?transactionId=5&type=PURCHASE&amount=500",
   true
 );
 xhttp.send();
