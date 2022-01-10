@@ -43,7 +43,7 @@ xhttp.onreadystatechange = function () {
 // open(method, url, async)
 xhttp.open(
   "GET",
-  "https://y87ypxfua7.execute-api.us-east-1.amazonaws.com/Prod/count_visitors?ip=" + ipnum + "&datetime=" + datetime,
+  "https://y87ypxfua7.execute-api.us-east-1.amazonaws.com/Prod/count_visitors?ip=" + ip + "&datetime=" + datetime,
   //"https://bwc2pl2iz5.execute-api.us-east-1.amazonaws.com/Prod/counter",
   true
 );
