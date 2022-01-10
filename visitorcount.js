@@ -48,7 +48,7 @@ $.get('https://www.cloudflare.com/cdn-cgi/trace', function(data) {
 });
 
 var xhttp2 = new XMLHttpRequest();
-xhttp.onreadystatechange = function () {
+xhttp2.onreadystatechange = function () {
   if (this.readyState == 4 && this.status == 200) {
     // Typical action to be performed when the document is ready:
     document.getElementById("visits").innerHTML = xhttp.responseText;
