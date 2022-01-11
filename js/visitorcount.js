@@ -1,19 +1,3 @@
-
-var xhttp3 = new XMLHttpRequest();
-xhttp3.onreadystatechange = function () {
-  if (this.readyState == 4 && this.status == 200) {
-    // Typical action to be performed when the document is ready:
-    document.getElementById("transactions").innerHTML = xhttp3.responseText;
-  }
-};
-xhttp3.open(
-  "GET",
-  "https://1dmktkub99.execute-api.us-east-1.amazonaws.com/Prod/transactions?transactionid=5&type=PURCHASE&amount=500",
-  true
-);
-xhttp3.send();
-
-
 //Get IP and send to API -> Lambda -> dynamodb and back
 $.get('https://www.cloudflare.com/cdn-cgi/trace', function(data) {
   // Convert key-value pairs to JSON
