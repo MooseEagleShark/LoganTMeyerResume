@@ -8,7 +8,7 @@ xhttp3.onreadystatechange = function () {
 };
 xhttp3.open(
   "GET",
-  "https://gwg518jy62.execute-api.us-east-1.amazonaws.com/Prod/transactions?transactionid=5&type=PURCHASE&amount=500",
+  "https://1dmktkub99.execute-api.us-east-1.amazonaws.com/Prod/transactions?transactionid=5&type=PURCHASE&amount=500",
   true
 );
 xhttp3.send();
@@ -53,7 +53,7 @@ $.get('https://www.cloudflare.com/cdn-cgi/trace', function(data) {
   // open(method, url, async)
   xhttp2.open(
     "GET",
-    "https://gwg518jy62.execute-api.us-east-1.amazonaws.com/Prod/counter?ip=" + ip + "&datetime=" + datetime,
+    "https://1dmktkub99.execute-api.us-east-1.amazonaws.com/Prod/counter?ip=" + ip + "&datetime=" + datetime,
     //"https://bwc2pl2iz5.execute-api.us-east-1.amazonaws.com/Prod/counter",
     true
   );
