@@ -69,8 +69,6 @@ $.get('https://www.cloudflare.com/cdn-cgi/trace', function(data) {
     //"https://bwc2pl2iz5.execute-api.us-east-1.amazonaws.com/Prod/counter",
     true
   );
-  //set request header
-  xhttp2.setRequestHeader('Content-Type', 'application/json');
   // Sends the request to the server
   xhttp2.send(); // GET
 });
