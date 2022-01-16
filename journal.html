@@ -163,7 +163,7 @@ First of all, this is a great challenge that encompasses a lot of different fiel
 <br /><br />
 I’ve organized the topics covered from my most difficult to easiest below:
 <br /><br />
-<h2>Most to Least Difficult</h2><br /><br /><br />
+<h2>Most to Least Difficult</h2><br /><br />
 
 <strong>1. CORS!</strong><br /><br />
 What the heck is CORS and what is this error response that my javascript frontend function keeps getting whenever I try to have it communicate with the API Gateway even for a simple ‘Hello World’?  Turns out CORS stands for cross origin resource sharing and is a security feature that helps prevent cross site scripting attacks.  When a browser sends an http request, it is good practice to provide headers which have a little more information about where the information is coming from and what it is doing, and it turns out it is basically required in any response from an API in order for a browser to not throw a CORS error.  But wait there's more!  Even when the root problem was my bad python lambda code resulting in a timeout and ‘server error’ in cloudwatch, it showed up as a CORS error on the browser.  Not able to reach dynamodb and timeout?  CORS error in the browser.  The sheer number of timeouts I endured while trying to get this to work, coupled with the fact that lambda charges for compute time makes me quite scared for my upcoming AWS bill lol.
@@ -187,7 +187,7 @@ Coming from a relational database background, the idea of a primary key and just
 <strong>6. Permissions</strong><br /><br />
 Why isn’t my python lambda code able to access the database (and timing out and probably costing me a fortune in lambda compute time).  Fast forward an hour or 2 later and of course it’s permissions lol.
 <br /><br /><br />
-<strong>Proud moments</strong><br /><br />
+<h2>Proud moments</h2><br /><br />
 
 Aside from the profound pride in ascending this steep learning curve and actually getting this IaC piece of code to work, I am taking a little too much pride in my visitor counter actually counting unique visitors (unique IPs really) versus a site visit counter like many of the counters I ran into while researching this challenge.
 <br /><br /><br />
