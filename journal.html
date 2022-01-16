@@ -163,33 +163,33 @@ First of all, this is a great challenge that encompasses a lot of different fiel
 <br /><br />
 I’ve organized the topics covered from my most difficult to easiest below:
 <br /><br />
-<strong>Most to Least Difficult</strong><br />
+<strong>Most to Least Difficult</strong><br /><br />
 
-CORS!
+<strong>1. CORS!</strong><br /><br />
 <br /><br />
 What the heck is CORS and what is this error response that my javascript frontend function keeps getting whenever I try to have it communicate with the API Gateway even for a simple ‘Hello World’?  Turns out CORS stands for cross origin resource sharing and is a security feature that helps prevent cross site scripting attacks.  When a browser sends an http request, it is good practice to provide headers which have a little more information about where the information is coming from and what it is doing, and it turns out it is basically required in any response from an API in order for a browser to not throw a CORS error.  But wait there's more!  Even when the root problem was my bad python lambda code resulting in a timeout and ‘server error’ in cloudwatch, it showed up as a CORS error on the browser.  Not able to reach dynamodb and timeout?  CORS error in the browser.  The sheer number of timeouts I endured while trying to get this to work, coupled with the fact that lambda charges for compute time makes me quite scared for my upcoming AWS bill lol.
 <br /><br />
 Protip:  Make sure to have all API responses (including error responses) include headers (this is written in your lambda function when your API Gateway is set to just be a lambda proxy) so that not everything will just look like a CORS error to your browser.
 <br /><br />
-Code validation, testing,  and build
+<strong>2. Code validation, testing,  and build</strong><br /><br />
 <br /><br />
 What a neat development to have Github Actions (use an apprunner) to mount my code and test it out before deployment?  I remember the days when I would just upload my code by ftp, try it in the production environment and then have to make many code corrections on the fly lol.  I’m glad this process has gotten a lot better, even if my code still isn’t perfect the first time, it’s great to have a shorter feedback loop to try and get to the working version as quickly as possible.
 <br /><br />
 It took me a little longer than it probably should have to figure out how this works and how to configure it.  Hint: just look in the .workflows file of github, but very cool to see how this has progressed!
 <br /><br />
-SAM - Serverless Application Model
+<strong>3. SAM - Serverless Application Model</strong><br /><br />
 <br /><br />
 So you want cloud newcomers to skip CloudFormation and go straight to a transform that sits on top of CloudFormation made specifically for efficiently making serverless stacks?  Actually, that was a brilliant idea.  These yaml templates boil down what is a lot of options and screens in the AWS console to a few options that are all laid out very efficiently right next to each other in a yaml file.  Pretty impressive what less than 100 lines of code can put together.  Ended up loving this aspect of the challenge and really puts into perspective what is possible in more complex architecture stacks.
 <br /><br />
-API Gateway and lambda proxy
+<strong>4. API Gateway and lambda proxy</strong><br /><br />
 <br /><br />
 I think I kept expecting this to be more complicated than it actually was.  While trying to figure out the CORS errors mentioned above, I kept thinking that I just didn’t have something configured right in the API Gateway (as there are options there for CORS if you have the lambda proxy disabled).  Turns out one simply has to leave it truly as a lambda proxy and do all of the coding (including headers) in the lambda script that the API Gateway proxies to.  Easy once you get the hang of it.
 <br /><br />
-Dynamo db and nosql schema
+<strong>5. Dynamo db and nosql schema</strong><br /><br />
 <br /><br />
 Coming from a relational database background, the idea of a primary key and just data is still an awkward concept for me.  It makes sense that nosql dbs are a much faster and streamlined model, but it definitely takes some stretching of the ol noodle to figure out how to set up the primary key to be unique and still store all of your data in a way that can be quickly recalled or updated when needed.  It was an additional perk to find out that the update CRUD also does a create in the case that the primary key doesn’t exist.  It certainly didn’t come naturally, but this was a great intro dynamodb and forced me to get my hands dirty thinking through some of the finer points of how to make something like this work.
 <br /><br />
-Permissions
+<strong>6. Permissions</strong><br /><br />
 <br /><br />
 Why isn’t my python lambda code able to access the database (and timing out and probably costing me a fortune in lambda compute time).  Fast forward an hour or 2 later and of course it’s permissions lol.
 
