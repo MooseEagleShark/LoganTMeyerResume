@@ -1,0 +1,235 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+ <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+   <head>
+     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+     <title>Logan Meyer - data, economics, build</title>
+
+     <!--bring in the Google Fonts-->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
+     <!-- How to use with css
+     font-family: 'Open Sans', sans-serif;
+     font-family: 'Titillium Web', sans-serif;
+     -->
+
+     <!--jquery for ip lookup-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+     <style type="text/css">
+       * {
+         margin: 0;
+         padding: 0;
+       }
+       body {
+         font-family: 'Titillium Web', sans-serif;
+         line-height: 24px;
+         font-size: 16px;
+       }
+       .clear {
+         clear: both;
+       }
+       #page-wrap {
+         width: 800px;
+         margin: 40px auto 60px;
+       }
+       #pic {
+         float: right;
+         margin: 80px 0 0 0;
+       }
+       h1 {
+         margin: 0 0 16px 0;
+         padding: 0 0 16px 0;
+         font-size: 42px;
+         font-weight: bold;
+         letter-spacing: -2px;
+         border-bottom: 1px solid #999;
+       }
+       h2 {
+         font-size: 22px;
+         margin: 0 0 6px 0;
+         position: relative;
+       }
+       h2 span {
+         position: absolute;
+         bottom: 0;
+         right: 0;
+         font-style: italic;
+         font-size: 18px;
+         color: #999;
+         font-weight: normal;
+       }
+       p {
+         margin: 0 0 16px 0;
+       }
+       a {
+         color: #999;
+         text-decoration: none;
+         border-bottom: 1px dotted #999;
+       }
+       a:hover {
+         border-bottom-style: solid;
+         color: black;
+       }
+       ul {
+         margin: 0 0 32px 17px;
+       }
+       #objective {
+         width: 500px;
+         float: left;
+       }
+       #objective p {
+         font-family: 'Open Sans', sans-serif;
+         font-style: italic;
+         color: #666;
+       }
+       dt {
+         font-style: italic;
+         font-weight: bold;
+         font-size: 20px;
+         text-align: right;
+         padding: 0 26px 0 0;
+         width: 150px;
+         float: left;
+         height: 100px;
+         border-right: 1px solid #999;
+       }
+       dd {
+         width: 600px;
+         float: right;
+       }
+       dd.clear {
+         float: none;
+         margin: 0;
+         height: 15px;
+       }
+     </style>
+   </head>
+
+   <body>
+
+     <div id="page-wrap">
+
+       <img
+         src="logan.jpg"
+         alt="Photo of Logan Meyer"
+         id="pic"
+         style="max-width: 250px; border: 3px; border-radius: 5px;"
+       />
+
+
+
+       <div id="contact-info" class="vcard">
+         <!-- Microformats! -->
+         <br>
+         <h1 class="fn">Logan T. Meyer</h1>
+
+         <p>
+           Email:
+           <a class="email" href="mailto:logantmeyer@gmail.com"
+             >logan.t.meyer@gmail.com</a><br/>
+
+           GitHub: <a href="https://github.com/snowtimber">github.com/snowtimber</a><br />
+         </p>
+       </div>
+
+       <div id="objective">
+         <p>
+           As a self-starter with wide ranging experience, my objective is to solve challenging puzzles, build interesting things, further my existing knowledge of technologies and cloud solutions, and develop strong colleague and client relationships.
+         </p>
+       </div>
+
+       <div class="clear"></div>
+
+       <dl>
+         <dd class="clear"></dd>
+
+         <dt>Blog</dt>
+         <dd>
+           <h2>A novice's guide to Forrest Brazeal's 'a cloud resume challenge'</h2>
+           <p>
+             <strong>AWS Certified Solutions Architect Associate</strong> (SAA-CO2)<br />
+             Certified, December 2021
+           </p>
+           <p>
+             <strong>AWS Certified Cloud Practitioner</strong> (CLF-CO1)<br />
+             Certified, September 2021
+           </p>
+           <p>
+             <strong>AWS Certified Cloud Practitioner</strong> (CLF-CO1)<br />
+             Certified, September 2021
+             <strong>About me:</strong><br />
+
+Ever since college (the last 10 years), I have been working in the very traditional fields of construction and oil & gas.  My first passion has always been technology, so when my small carriage house construction company plateaued during the pandemic, it became apparent that this would be the ideal opportunity to transition back to tech and get back into the interesting innovations that are pushing our society forward.
+
+How I found the challenge:
+I am very fortunate to have a good friend, Mia, who works at Sumo Logic, and encouraged me to look at what is happening in cloud computing, infrastructure, and the trends of PaS and IaC.  I have taken a couple AWS certifications (practitioner and cloud associate), and heard about the challenge through Corey Quinn’s podcast ‘This Week in AWS’.  With my experience level, the services covered in this challenge and some hands on problem solving was too ideal to pass up.
+
+And on to my experience with Forrest Brazeal's Cloud Resume Challenge:
+
+First of all, this is a great challenge that encompasses a lot of different fields in cloud computing like CI/CD, integrations, api gateway, lambda proxies, python, dynamodb, CORS, and manages to deliver all of that learning ultimately into 2 very elegant brief code files: a template.yaml file and a simple python lambda function.   But holy smokes, in order to actually make those 2 pieces of code work and understand what needed to happen and how to configure it, was a very steep learning curve for myself and I imagine quite a few other newcomers as well.
+
+I’ve organized the topics covered from my most difficult to easiest below:
+
+<strong>Most to Least Difficult</strong><br />
+
+CORS!
+
+What the heck is CORS and what is this error response that my javascript frontend function keeps getting whenever I try to have it communicate with the API Gateway even for a simple ‘Hello World’?  Turns out CORS stands for cross origin resource sharing and is a security feature that helps prevent cross site scripting attacks.  When a browser sends an http request, it is good practice to provide headers which have a little more information about where the information is coming from and what it is doing, and it turns out it is basically required in any response from an API in order for a browser to not throw a CORS error.  But wait there's more!  Even when the root problem was my bad python lambda code resulting in a timeout and ‘server error’ in cloudwatch, it showed up as a CORS error on the browser.  Not able to reach dynamodb and timeout?  CORS error in the browser.  The sheer number of timeouts I endured while trying to get this to work, coupled with the fact that lambda charges for compute time makes me quite scared for my upcoming AWS bill lol.
+
+Protip:  Make sure to have all API responses (including error responses) include headers (this is written in your lambda function when your API Gateway is set to just be a lambda proxy) so that not everything will just look like a CORS error to your browser.
+
+Code validation, testing,  and build
+
+What a neat development to have Github Actions (use an apprunner) to mount my code and test it out before deployment?  I remember the days when I would just upload my code by ftp, try it in the production environment and then have to make many code corrections on the fly lol.  I’m glad this process has gotten a lot better, even if my code still isn’t perfect the first time, it’s great to have a shorter feedback loop to try and get to the working version as quickly as possible.
+
+It took me a little longer than it probably should have to figure out how this works and how to configure it.  Hint: just look in the .workflows file of github, but very cool to see how this has progressed!
+
+SAM - Serverless Application Model
+
+So you want cloud newcomers to skip CloudFormation and go straight to a transform that sits on top of CloudFormation made specifically for efficiently making serverless stacks?  Actually, that was a brilliant idea.  These yaml templates boil down what is a lot of options and screens in the AWS console to a few options that are all laid out very efficiently right next to each other in a yaml file.  Pretty impressive what less than 100 lines of code can put together.  Ended up loving this aspect of the challenge and really puts into perspective what is possible in more complex architecture stacks.
+
+API Gateway and lambda proxy
+
+I think I kept expecting this to be more complicated than it actually was.  While trying to figure out the CORS errors mentioned above, I kept thinking that I just didn’t have something configured right in the API Gateway (as there are options there for CORS if you have the lambda proxy disabled).  Turns out one simply has to leave it truly as a lambda proxy and do all of the coding (including headers) in the lambda script that the API Gateway proxies to.  Easy once you get the hang of it.
+
+Dynamo db and nosql schema
+
+Coming from a relational database background, the idea of a primary key and just data is still an awkward concept for me.  It makes sense that nosql dbs are a much faster and streamlined model, but it definitely takes some stretching of the ol noodle to figure out how to set up the primary key to be unique and still store all of your data in a way that can be quickly recalled or updated when needed.  It was an additional perk to find out that the update CRUD also does a create in the case that the primary key doesn’t exist.  It certainly didn’t come naturally, but this was a great intro dynamodb and forced me to get my hands dirty thinking through some of the finer points of how to make something like this work.
+
+Permissions
+
+Why isn’t my python lambda code able to access the database (and timing out and probably costing me a fortune in lambda compute time).  Fast forward an hour or 2 later and of course it’s permissions lol.
+
+<strong>Proud moments</strong><br />
+
+Aside from the profound pride in ascending this steep learning curve and actually getting this IaC piece of code to work, I am taking a little too much pride in my visitor counter actually counting unique visitors (unique IPs really) versus a site visit counter like many of the counters I ran into while researching this challenge.
+
+<strong>Big thanks to Forrest Brazeal</strong> for being a fantastic and well needed lighthouse for those of us trying to get into the cloud architecture world.
+
+Thank you!
+Logan
+
+           </p>
+         </dd>
+
+         <dd class="clear"></dd>
+       </dl>
+
+       <div class="clear"></div>
+     </div>
+   </body>
+   <footer>
+     <div>
+
+       <p style="text-align: center;">Unique Visitors: <span id="uniquevisits">0</span></p>
+       <p style="text-align: center;">ip: <span id="ipdiv">0</span></p>
+       <p style="text-align: center;">datetime: <span id="datetime">0</span></p>
+
+     </div>
+     <script src="js/visitorcount.js"></script>
+
+   </footer>
+</html>
