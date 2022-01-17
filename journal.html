@@ -171,7 +171,7 @@ I am very fortunate to have a good friend who works at Sumo Logic that encourage
 
 And on to my experience with Forrest Brazeal's Cloud Resume Challenge:
 <br /><br />
-First of all, this is a great challenge that encompasses a lot of different fields in cloud computing like CI/CD, integrations, api gateway, lambda proxies, python, dynamodb, CORS, and manages to deliver all of that learning ultimately into 2 very elegant brief code files: a template.yaml file and a simple python lambda function.   But holy smokes, in order to actually make those 2 pieces of code work and understand what needed to happen and how to configure it, was a very steep learning curve for myself and I imagine quite a few other newcomers as well.
+First of all, this is a great challenge that encompasses a lot of different fields in cloud computing like CI/CD, integrations, api gateway, lambda proxies, python, dynamodb, CORS, and manages to deliver all of that learning ultimately into two very elegant brief code files: a template.yaml file and a simple python lambda function.   But holy smokes, in order to actually make those two pieces of code work and understand what needed to happen and how to configure it, was a very steep learning curve for myself and I imagine quite a few other newcomers as well.
 <br /><br />
 I’ve organized the topics covered from my most difficult to easiest below:
 <br /><br />
@@ -185,7 +185,7 @@ But wait there's more!  Even when the root problem was my bad python lambda code
 Protip:  Make sure to have all API responses (including error responses) include headers (this is written in your lambda function when your API Gateway is set to just be a lambda proxy) so that not everything will just look like a CORS error to your browser.
 <br /><br /><br />
 <strong>2. Code validation, testing,  and build</strong><br /><br />
-What a neat development to have Github Actions (use an apprunner) to mount my code and test it out before deployment?  I remember the days when I would just upload my code by ftp, go to the url (php), and then have decipher the errors and try to make many code corrections on the fly, before starting the deployment process over again.  I’m glad this process has gotten a lot better, and even though my code still is never perfect the first time, it’s great to have a shorter feedback loop to try and get to the working version as quickly as possible.
+What a neat feature to have Github Actions (use an apprunner) to mount my code and test it out before deployment!  I remember the days when I would just upload my code by ftp, go to the url (php), and then have decipher the errors and try to make many code corrections on the fly, before starting the deployment process over again.  I’m glad this process has gotten a lot better, and even though my code still is never perfect the first time, it’s great to have a shorter feedback loop to try and get to the working version as quickly as possible.
 <br /><br />
 It took me a little longer than it probably should have to figure out how this works and how to configure it.  Hint: just look in the .workflows file of github, but very cool to see how this has progressed!
 <br /><br /><br />
@@ -199,7 +199,7 @@ I think I kept expecting this to be more complicated than it actually was.  Whil
 Coming from a relational database background, the idea of a primary key and just data is still an awkward concept for me.  It makes sense that nosql dbs are a much faster and streamlined model, but it definitely takes some stretching of the ol noodle to figure out how to set up the primary key to be unique and still store all of your data in a way that can be quickly recalled or updated when needed.  It was an additional perk to find out that the update CRUD also does a create in the case that the primary key doesn’t exist.  It certainly didn’t come naturally, but this was a great intro dynamodb and forced me to get my hands dirty thinking through some of the finer points of how to make something like this work.
 <br /><br /><br />
 <strong>6. Permissions</strong><br /><br />
-Why isn’t my python lambda code able to access the database (and timing out and probably costing me a fortune in lambda compute time).  Fast forward an hour or 2 later and of course it’s permissions.
+Why isn’t my python lambda code able to access the database (and timing out and probably costing me a fortune in lambda compute time).  Fast forward an hour or two later and of course it’s permissions.
 <br /><br /><br />
 <h2>Proud moments</h2><br /><br />
 
