@@ -10,6 +10,8 @@ You are currently at the repo for the static website side and here is a link to 
 
 "Now the important conditions:
 
+
+
 1.Your resume needs to have the AWS Cloud Practitioner certification on it. This is an introductory certification that orients you on the industry-leading AWS cloud – if you have a more advanced AWS cert, that’s fine but not expected. No cheating: include the validation code on the resume. You can sit this exam online for $100 USD. If that cost is a dealbreaker for you, let me know and I’ll see if I can help. Here are some exam prep resources.
 
 -COMPLETE
